@@ -1,0 +1,30 @@
+#pragma once
+
+#include "MainWindow.g.h"
+
+namespace winrt::Episode1::implementation
+{
+    struct MainWindow : MainWindowT<MainWindow>
+    {
+    private:
+        int32_t propertyValue = 16;
+    public: 
+        MainWindow()
+        {
+            // Xaml objects should not call InitializeComponent during construction.
+            // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
+        }
+
+        int32_t MyProperty();
+        void MyProperty(int32_t value);
+
+        void myButton_Click(IInspectable const& sender, Microsoft::UI::Xaml::RoutedEventArgs const& args);
+    };
+}
+
+namespace winrt::Episode1::factory_implementation
+{
+    struct MainWindow : MainWindowT<MainWindow, implementation::MainWindow>
+    {
+    };
+}

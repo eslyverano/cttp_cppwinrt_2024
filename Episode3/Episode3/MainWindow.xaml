@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Episode3.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Episode3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Vertical" Padding="12" BorderBrush="Gray" BorderThickness="0,0,1,0">
+            <ComboBox x:Name="manualList" Header="Manual List" Width="200" />
+            <Button x:Name="addManualItemButton" Content="Add Item" Click="addManualItemButton_Click" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Padding="12" BorderBrush="Gray" BorderThickness="0,0,1,0">
+            <ComboBox x:Name="sourceList" Header="ItemsSource List" Width="200" />
+            <Button x:Name="addSourceItemButton" Content="Add Item" Click="addSourceItemButton_Click" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Padding="12" BorderBrush="Gray" BorderThickness="0,0,1,0">
+            <ComboBox x:Name="boundList" Header="Bound List" Width="200" ItemsSource="{x:Bind collection}" />
+            <Button x:Name="addBoundItemButton" Content="Add Item" Click="addBoundItemButton_Click" />
+        </StackPanel>
+    </StackPanel>
+</Window>

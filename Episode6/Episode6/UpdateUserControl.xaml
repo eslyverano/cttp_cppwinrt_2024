@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="Episode6.UpdateUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Episode6"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical">
+        <TextBox x:Name="firstNameBox" InputScope="NameOrPhoneNumber" Margin="0,0,0,12" Header="First name" />
+        <TextBox x:Name="lastNameBox" InputScope="NameOrPhoneNumber" Margin="0,0,0,12" Header="Last name" />
+        <TextBox x:Name="emailBox" InputScope="EmailNameOrAddress" Margin="0,0,0,12" Header="Email address" />
+        <Button x:Name="saveButton" Content="Save" Style="{StaticResource AccentButtonStyle}" 
+                HorizontalAlignment="Stretch" Click="saveButton_Click" />
+    </StackPanel>
+
+</UserControl>

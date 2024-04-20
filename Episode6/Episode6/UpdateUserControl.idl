@@ -1,0 +1,10 @@
+namespace Episode6
+{
+    [default_interface]
+    runtimeclass UpdateUserControl : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UpdateUserControl();
+        void LoadUserData(Int32 id, String firstName, String lastName, String email);
+        event Windows.Foundation.EventHandler<Int32> UserUpdated;
+    }
+}

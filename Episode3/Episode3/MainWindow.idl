@@ -1,0 +1,9 @@
+namespace Episode3
+{
+    [default_interface]
+    runtimeclass MainWindow : Microsoft.UI.Xaml.Window
+    {
+        MainWindow();
+        Windows.Foundation.Collections.IObservableVector<String> collection{ get; };    // In idl syntax, namespaces are separated with .
+    }
+}

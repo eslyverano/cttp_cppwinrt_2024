@@ -1,0 +1,10 @@
+import "UserViewModel.idl";
+namespace Episode6
+{
+    [default_interface]
+    runtimeclass MainPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        MainPage();
+        Windows.Foundation.Collections.IObservableVector<UserViewModel> userArray{ get; };
+    }
+}

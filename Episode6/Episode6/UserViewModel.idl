@@ -1,0 +1,14 @@
+namespace Episode6
+{
+    [bindable]
+    [default_interface]
+    runtimeclass UserViewModel 
+    {
+        UserViewModel();
+        void SetUserData(Int32 id, String firstName, String lastName, String email);
+        String FirstName{ get; };
+        String LastName{ get; };
+        String Email{ get; };
+        Int32 Id{ get; };
+    }
+}

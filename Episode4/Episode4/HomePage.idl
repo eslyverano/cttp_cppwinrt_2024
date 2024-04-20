@@ -1,0 +1,8 @@
+namespace Episode4
+{
+    [default_interface]
+    runtimeclass HomePage : Microsoft.UI.Xaml.Controls.Page
+    {
+        HomePage();
+    }
+}

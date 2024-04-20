@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Episode2.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Episode2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Vertical">
+            <Border x:Name="colorPanel" Width="64" Height="64" CornerRadius="32" />
+            <RadioButton x:Name="yellowButton" Content="Yellow" Checked="yellowButton_Checked" />
+            <RadioButton x:Name="blueButton" Content="Blue" Checked="blueButton_Checked" />
+            <RadioButton x:Name="redButton" Content="Red" Checked="redButton_Checked" />
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="20,0,0,0">
+            <TextBox x:Name="nameBox" Header="Enter your name" Width="200" />
+            <Button x:Name="sayHiButton" Content="Say Hi!" Click="sayHiButton_Click" />
+        </StackPanel>
+    </StackPanel>
+</Window>
