@@ -1,0 +1,12 @@
+namespace Episode11
+{
+    [bindable]
+    [default_interface]
+    runtimeclass ContactViewModel 
+    {
+        ContactViewModel();
+        String Name{ get; };
+        String Country{ get; };   
+        void SetContactData(String _name, String _country);
+    }
+}
