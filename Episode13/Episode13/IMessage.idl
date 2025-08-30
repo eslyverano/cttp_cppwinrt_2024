@@ -1,0 +1,5 @@
+namespace Episode13{
+	interface IMessage {
+		void ShowMessage();
+	};
+}

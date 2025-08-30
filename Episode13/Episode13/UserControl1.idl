@@ -1,0 +1,10 @@
+import "IMessage.idl";
+namespace Episode13
+{
+    [default_interface]
+    runtimeclass UserControl1 : Microsoft.UI.Xaml.Controls.UserControl, IMessage
+    {
+        UserControl1();
+        Int32 MyProperty;
+    }
+}
