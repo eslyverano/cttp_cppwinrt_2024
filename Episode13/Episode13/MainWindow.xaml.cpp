@@ -29,6 +29,9 @@ namespace winrt::Episode13::implementation
 
         imsg = uc2().try_as<Episode13::IMessage>();
         imsg.ShowMessage();
+
+        //Another way to do it: >>>  uc2().try_as<Episode13::IMessage>().ShowMessage();
+        
     }
 
 }

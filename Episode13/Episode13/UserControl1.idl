@@ -1,3 +1,5 @@
+// We import our interface .idl file
+// No need to repeat the declaration of ShowMessage() method
 import "IMessage.idl";
 namespace Episode13
 {
